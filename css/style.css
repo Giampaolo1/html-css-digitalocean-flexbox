@@ -1,0 +1,367 @@
+/*  regole generali della pagina */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* font */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+[class*="col-"] {
+  height: auto;
+  text-align: center;
+  /* border: 1px solid black; /* DEBUG:  */ */
+}
+
+h2, h3, {
+color: navy;
+}
+
+h5 {
+  color: white;
+}
+
+h4 {
+  color: grey;
+  padding: 1%;
+}
+
+ /* .container-fluid, .container {
+  border: 1px solid yellow;
+} */ /* DEBUG:  */
+
+/* elenchi puntati:  */
+ul {
+  list-style: none;
+}
+li {
+  padding: 2%;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  text-decoration: none;
+}
+
+  /* .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 10;
+}*/ /* deploy */
+
+
+/* fine elenchi puntati */
+
+/*  header  */
+/*  navbar */
+.nav1left {
+  text-align: left;
+  padding: 1%;
+}
+.nav1right {
+  text-align: right;
+}
+
+.nav2left {
+  width: 20%;
+}
+.nav2left img {
+  width: 100%;
+}
+.nav2center {
+  width: 60%;
+}
+.nav2right {
+  width: 20%;
+  padding: 8px;
+}
+/* nav nascosta */
+@media screen and (max-width: 1050px){
+.nav {
+  display: none;
+}
+}
+@media screen and (min-width: 1050px){
+.navnascosta {
+  display: none;
+}
+}
+
+.navnascosta {
+  background: blue
+}
+
+.navnascleft {
+  text-align: left;
+}
+.navnascleft img {
+  width: 40%;
+}
+
+.navnascright {
+  text-align: right;
+  color: white;
+}
+.navnascright i {
+  font-size: 30px;
+}
+
+/* dropdown:  */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: #f9f9f9;
+  height: 300px;
+  width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* fine dropdown */
+
+@media screen and (min-width: 1050px){
+.contnascosto {
+  display: none;
+}
+}
+
+
+/* JUMBOTRON */
+.grande {
+  /* margin-top: 120px; */
+  height: 600px;
+  background-image: url(../img/sfondo.jpg);
+}
+
+h1 {
+  color: white;
+  text-align: left;
+  font-size: 60px;
+}
+
+.grandeleft h3 {
+  color: lightgrey;
+  text-align: left;
+}
+
+.grandeleft {
+  height: 600px;
+  padding: 10%;
+}
+
+.granderight {
+  background: white;
+  height: 500px;
+  width: 40%; /* DEBUG: ? */
+  margin-top: 50px;
+  margin-left: auto;
+}
+.bottoni {
+  background: #F3F5F9;
+  width: 40%;
+  text-align: left;
+}
+/* FINE JUMBOTRON:  */
+
+/* sezione loghi:  */ /* prova flex */
+
+.loghiescritte {
+  background: #F3F5F9;
+  height: 250px;
+}
+
+.loghiescritte h4 {
+  padding: 2%;
+}
+
+.innovative {
+  height: 70px;
+}
+/* IDEA:  */
+/* .docker img {
+  width: 60%;
+}
+.gitlab img {
+  width: 40%;
+}
+.slack img {
+  width: 50%;
+}
+.hashicorp img {
+  width: 60%;
+}
+.wework img {
+  width: 50%;
+}
+.splunk img {
+  width: 50%;
+  padding-top: 7%;
+} */
+
+.loghetti {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.loghetti img {
+  max-width: 12%;
+  /* flex-wrap: wrap;
+  align-items: center; */
+}
+
+/* fine footer */
+/* inizio main */
+
+/* sez kubernetes */
+.kubernetesandmore h4 {
+  color: navy;
+}
+.kubernetesandmore h3 {
+  color: blue;
+}
+.Kubernetes {
+  text-align: left;
+}
+/* sez designed:  */
+.designed {
+  background: #F3F5F9;
+  padding: 3% 0;
+}
+
+.freccia {
+  font-size: 25px;
+  color: navy;
+}
+.sample img {
+  width: 70%;
+  margin: 3%;
+}
+.usekubernetes {
+  margin-top: 2%;
+  color: navy;
+}
+.usekubernetes h4 {
+  color: blue;
+}
+.pallina {
+  color: blue;
+  padding: 3px;
+  font-size: 10px;
+}
+/* sez built */
+.built {
+  padding-top: 4%;
+}
+.logoalign {
+  text-align: left;
+  margin: 3% 0;
+}
+.scudo {
+  font-size: 25px;
+  color: blue;
+}
+.loghetti h4 {
+  color: navy;
+  font-weight: bold;
+}
+.loghetti h3, .loghetti a {
+  color: blue;
+}
+/* sezione mappamondo */
+.mappamondo {
+  background-image: url(../img/mappamondo.svg);
+  background-color: #031B4E;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.mappamondo h2 {
+  color: white;
+}
+/* tabella */
+.tabella {
+  margin: 5%;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  padding: 1%;
+  border-bottom: solid 0.1px;
+  color: grey;
+}
+
+td b {
+  color: white;
+}
+.right {
+  text-align: right;
+}
+/* sez designed */
+.designed h2 {
+  color: navy;
+}
+/* sez getstarted */
+.getstarted {
+  background-image: url(../img/sfondo.jpg);
+  height: 200px;
+  padding-top: 20px;
+}
+.bottone {
+  margin: 1%;
+  background: white;
+  color: blue;
+  font-weight: bold;
+  font-size: 16px;
+}
+.getstarted h3 {
+  font-weight: bold;
+  color: white;
+}
+/* footer */
+.footer {
+  background: #031B4E;
+  padding: 2% 10%;
+}
+
+/* footer2 */
+.copyright {
+ text-align: left;
+}
+
+.copyright span {
+  color: grey;
+}
+.copyright i {
+  font-size: 40px;
+  color: blue;
+}
+
+.socials {
+  text-align: right;
+  color: lightgrey;
+}
+.socials li {
+  display: inline-block;
+  color: grey;
+  font-size: 20px;
+}
